@@ -31,10 +31,8 @@ For the project, we utilized the website www.autogidas.lt, which is freely acces
 - Clustered column chart for average price by city it's sold in
 - Line chart for average price by year in which it was made
 - Line chart for car listing count by year in which it was made
-<br>
-![Autogidas Dashboard](https://github.com/LaurynasBil/Autogidas-Project/blob/main/files/dashboard.png)
 
-[Autogidas Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDBjNWI0ZjQtMDkxNy00YzQyLWE5NzktMzZhM2M4OTVlYWM2IiwidCI6IjIzOWEwODc4LTk5NDQtNDFlYi1iZWRjLTczNWY4MzdkNTI3YiIsImMiOjl9)
+[![Autogidas Dashboard](https://github.com/LaurynasBil/Autogidas-Project/tree/main/pictures/dashboard.png)](https://app.powerbi.com/view?r=eyJrIjoiMDBjNWI0ZjQtMDkxNy00YzQyLWE5NzktMzZhM2M4OTVlYWM2IiwidCI6IjIzOWEwODc4LTk5NDQtNDFlYi1iZWRjLTczNWY4MzdkNTI3YiIsImMiOjl9)
 
 
 
