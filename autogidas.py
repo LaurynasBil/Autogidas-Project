@@ -8,7 +8,7 @@ headers = {
     }
 
 data = []
-for i in range(1, 245):
+for i in range(1, 247):
     url=f'https://autogidas.lt/skelbimai/automobiliai/?f_50=kaina_asc&page={i}'
 
     response = requests.get(url, headers=headers)
@@ -63,7 +63,24 @@ for i in range(1, 245):
             'Location': location,
             'Price': price
         })
-    for skelbimas in new_posting_list:
-        data.append(skelbimas)
+    for listing in new_posting_list:
+        data.append(listing)
 df = pd.DataFrame(data)
 df.to_csv("files/autogidaslistings.csv", index = False)
+
+df = pd.read_csv('files/autogidaslistings.csv')
+df['Make'] = df['Name'].str.split(' ', expand=True)[0]
+df['Model'] = df['Name'].str.split(' ', expand=True)[1]
+cols = df.columns.tolist()
+cols = cols[-2:] + cols[:-2]
+df = df[cols]
+df['Price'] = df['Price'].str.replace(' €', '').str.replace(' ', '').str.replace('+mokesčiai', '').astype('int')
+df['Mileage'] = df['Mileage'].str.replace(' km', '').str.replace(' ', '').astype('float')
+df['Fuel Type'] = df['Fuel Type'].str.replace(' ', '').str.replace('Gamtinėsdujos', 'Dujos')
+df['Gearbox'] = df['Gearbox'].fillna('Automatinė')
+df['Engine'] = df['Engine'].apply(lambda x: x / 10 if x > 10 else x)
+df['Mileage'] = df['Mileage'].apply(lambda x: x / 10 if x > 2000000 and x % 10 == 0 else x)
+df = df.drop(df[df['Made'] == 'Naujas'].index)
+df['Year'] = df['Made'].str.split('-', expand=True)[0].astype('int')
+
+df.to_excel('files/autogidas_listings_final.xlsx', sheet_name='Data')
