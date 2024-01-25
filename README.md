@@ -32,7 +32,7 @@ For the project, we utilized the website www.autogidas.lt, which is freely acces
 - Line chart for average price by year in which it was made
 - Line chart for car listing count by year in which it was made
 <br>
-[![Autogidas Dashboard](https://github.com/LaurynasBil/Autogidas-Project/blob/main/files/Dashboard.png)](https://app.powerbi.com/view?r=eyJrIjoiMDBjNWI0ZjQtMDkxNy00YzQyLWE5NzktMzZhM2M4OTVlYWM2IiwidCI6IjIzOWEwODc4LTk5NDQtNDFlYi1iZWRjLTczNWY4MzdkNTI3YiIsImMiOjl9)
+![fig7](https://github.com/LaurynasBil/Final-Project/blob/main/plots/fig7.png)
 
 
 
