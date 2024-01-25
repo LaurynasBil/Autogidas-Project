@@ -34,5 +34,7 @@ For the project, we utilized the website www.autogidas.lt, which is freely acces
 <br>
 ![Autogidas Dashboard](https://github.com/LaurynasBil/Autogidas-Project/blob/main/files/dashboard.png)
 
+[Autogidas Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDBjNWI0ZjQtMDkxNy00YzQyLWE5NzktMzZhM2M4OTVlYWM2IiwidCI6IjIzOWEwODc4LTk5NDQtNDFlYi1iZWRjLTczNWY4MzdkNTI3YiIsImMiOjl9)
+
 
 
